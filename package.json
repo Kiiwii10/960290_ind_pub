@@ -1,0 +1,29 @@
+{
+  "name": "induvdial",
+  "version": "1.0.0",
+  "description": "API-only Retrieval-Augmented Generation (RAG) assistant over an English TED dataset (metadata + transcripts), backed by Pinecone and deployed on Vercel.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build:frontend": "tsc",
+    "dev:frontend": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kiiwii10/960290_ind_pub.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Kiiwii10/960290_ind_pub/issues"
+  },
+  "homepage": "https://github.com/Kiiwii10/960290_ind_pub#readme",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

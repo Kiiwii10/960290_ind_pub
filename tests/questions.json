@@ -1,0 +1,25 @@
+{
+  "base_url_default": "http://localhost:8000",
+  "cases": [
+    {
+      "id": "goal1_precise_fact",
+      "goal": "Precise Fact Retrieval",
+      "question": "Find a TED talk that discusses overcoming fear or anxiety. Provide the title and speaker."
+    },
+    {
+      "id": "goal2_list_3",
+      "goal": "Multi-Result Topic Listing",
+      "question": "Which TED talk focuses on education or learning? Return a list of exactly 3 talk titles."
+    },
+    {
+      "id": "goal3_summary",
+      "goal": "Key Idea Summary Extraction",
+      "question": "Find a TED talk where the speaker talks about technology improving people’s lives. Provide the title and a short summary of the key idea."
+    },
+    {
+      "id": "goal4_recommend",
+      "goal": "Recommendation With Evidence",
+      "question": "I’m looking for a TED talk about climate change and what individuals can do in their daily lives. Which talk would you recommend?"
+    }
+  ]
+}

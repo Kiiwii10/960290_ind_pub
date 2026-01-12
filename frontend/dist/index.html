@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment: Build a TED Talk RAG Assistant</title>
+    <link rel="stylesheet" href="/app/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <h1>Simple Interface - TED Talks RAG Assistant</h1>
+        <p class="subtitle">Daniel Moroz - daniellebed at campus technion</p>
+      </header>
+
+      <section class="card" aria-labelledby="prompt-form-title">
+        <h2 id="prompt-form-title">RAG TED</h2>
+        <form id="prompt-form">
+          <label for="question">Prompt</label>
+          <textarea
+            id="question"
+            name="question"
+            placeholder="Ask about a TED Talk, recommend talks, summarize key ideas, ..."
+            required
+            rows="5"
+          ></textarea>
+          <div class="form-actions">
+            <button type="submit">Send prompt</button>
+            <button type="button" id="clear-answer" class="ghost-button">Clear answer</button>
+            <div id="loading-bar" class="loading" aria-live="polite" aria-label="Processing">
+              <div class="progress"></div>
+              <span>Processing...</span>
+            </div>
+          </div>
+        </form>
+        <div class="error" id="prompt-error" role="alert" hidden></div>
+        <div class="response" id="prompt-response">
+          <h3>Answer</h3>
+          <pre id="answer-text" aria-live="polite"></pre>
+          <div>
+            <h4>Context excerpts</h4>
+            <ul id="context-list"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="stats-title">
+        <div class="stats-header">
+          <h2 id="stats-title">System stats</h2>
+        </div>
+        <div id="stats-list" class="stats-list"></div>
+      </section>
+    </main>
+    <script type="module" src="/app/main.js"></script>
+  </body>
+</html>
